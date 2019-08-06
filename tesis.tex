@@ -1,0 +1,156 @@
+\documentclass[paper=a4paper, fontsize=12pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[spanish, activeacute]{babel} %Definir idioma español
+\usepackage[utf8]{inputenc} %Codificacion utf-8
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{physics}
+\usepackage{slashed}
+\usepackage{hyperref}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % figuras
+\usepackage{subfigure} % subfiguras
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Thesis\\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\date{}
+\Large  {Univeridad Sergio Arboleda} \\  % Youra}
+\Large  {Escuela de Ciencias Exactas e Ingeniería} \\
+\Large  {Departamento de Matem\'aticas} \\
+}
+
+\author{N\'estor Andr\'es Pach\'on Bermeo } % Your name
+
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+\section{Titles}
+Machine Learning and Data Mining Algorithms Analysis in the Track vs. Shower classification problem of the Deep Underground Neutrino, DUNE, of FERMILAB.
+\section{Abstract }
+
+
+This thesis shows the research of data visualization, feature selection, and accuracy analysis of different algorithms in the Track vs. Shower neutrino classification problem. This study used the feature neutrino simulations of the PANDORA research neutrino group of Cambridge University. First, it shows a statistical analysis of a dataset of 0. 8 million simulations of 21 explanatory variables and a dependent variable. The latter feature is the neutrino flavor. Indeed, tests are carried out on the goodness of different probability distributions as well as techniques for dimensional reduction. Second, the work shows an evaluation of the feature permutation as a way of feature selection. It is done by comparing it with traditional techniques such as forward and backward feature selection and implementing these techniques in different machine learning algorithms. Third, it compares the classification efficiency of Logistic Regression, KNN, Perceptron, Random Forest, SVM, and boosted trees. Besides, the research uses properties of the algorithms to explain the behavior of the Tracks and Showers simulations. 
+ 
+\section{Introduction}
+
+One of the characteristics of the world's advanced countries is their investment in science and technology.  In this case, they want to be able to understand and modify the environment in their favor. One of the fields who receives this attention is physics, specifically high energy physics. Admittedly, this discipline is one of the fundamental axes from which humanity can understand the whole universe.
+
+
+
+In particular, several laboratories around the world have been working for this purpose. Notably, in the United States, the Department of Energy of this country through Fermilab and its collaborators, are building a new experiment called DUNE: Deep Underground Neutrino Experiment. This experiment consists of two detectors, one near the Fermilab facility, the high energy physics research center in Batavia, Illinois, and the other in Sanford to study various phenomena in neutrino physics.
+
+The neutrino is involved in the nuclear reactor's process, nuclear fusion in the sun and with unresolved physics problems such as the matter and antimatter asymmetry, the exploration for new particles,  the dark matter, supernovae, and other events. Moreover, according to experimental evidence, neutrinos do not follow many of the predictions of the standard model, the most approximate theory that describes our universe. Therefore, their study and comprehension is a fact of vital importance.
+
+Hence, Fermilab, with the help of many countries, has been building the most massive neutrino detectors ever seen in the collaboration. These detectors work through LArTPC, a new technology which uses a combination of electric and magnetic fields along with a sensitive volume of gas or liquid to perform a three-dimensional reconstruction of particle interaction.
+
+As a result,  DUNE scientists need to develop software for this new technology. The name of this software is LArSoft. This software allows the filtering and reconstruction of data from the detectors. Also, LArSoft contains multiple algorithms for signal processing, cluster finding, particle trace searching, vertex finding, particle identification among other things in order to analyze and interpret the data produced by the experiments (Pordes $\&$ Snider, 2016).
+
+Finally, this project wants to use LArSoft tools along with machine learning and big data techniques to analyze simulations of detectors in order to obtain predictions of DUNE experiments. With this, they want to optimize processes analysis and filtering of neutrino detector data. 
+
+
+
+
+\section{Bibliografia}
+\begin{itemize}
+\item Brookhaven National Laboratory. (s.f.). Brookhaven Neutrino Research. Recuperado de   \url{https://www.bnl.gov/science/neutrinos.php }
+
+\item FERMILAB. (2018, 1 junio). LBNF/DUNE science goals. Recuperado de  \url{www.fnal.gov/pub/science/lbnf-dune/science-goals.html } (FERMILAB, 2018)
+
+
+\item Gleiser, M. (2015, 7 octubre). A Short History Of The Mysterious Disappearing Neutrinos.  Recuperado de
+\newline 
+\url{www.npr.org/sections/13.7/2015/10/07/446372157/a-short-history-of-the-mysterious-disappearing-neutrinos } 
+
+\item GIUNTI, C., $\&$ CERN. Geneva. (2008). Neutrino Physics : Majorana Neutrino Masses and Mixing (2/4) [Archivo de vídeo ]. Recuperado de  \url{https://cds.cern.ch/record/1177400 }
+(GIUNTI $\&$ CERN. Geneva, 2008)
+
+\item Gunti, D., $\&$  Kim, C. (2007). Fundamentals of Neutrino Physics and Astrophysics. Oxford, Inglaterra: OXFORD UNIVERSITY PRESS.
+
+\item Griffiths, D. (1987). INTRODUCTION TO ELEMENTARY PARTICLES. Weinheim, Alemania: Wiley-VCH.
+
+\item  \url{http://t2k-experiment.org/neutrinos/a-brief-history/ }
+
+\item  \url{http://www.hyper-k.org/en/physics/phys-cp.html }
+Según la página web (http://www.hyper-k.org/en/physics/phys-cp.html)
+
+
+\item Helicity, Chirality, Mass, and the Higgs [Publicación en un blog]. (2011, 19 junio). Recuperado de:
+\newline
+  \url{http://www.quantumdiaries.org/2011/06/19/helicity-chirality-mass-and-the-higgs/} ("Helicity, Chirality, Mass, and the Higgs", 2011)
+ 
+
+\item Kemp, E. (2017, 28 julio). The Deep Underground Neutrino Experiment – DUNE: the precision era of neutrino physics. Recuperado de  \url{https://arxiv.org/pdf/1709.09385.pdf } (Kemp, 2017)
+
+\item Landau, L. D., $\&$ Lifshitz, E. M. (1980). The Classical Theory of Fields (4ª ed.). Oxford, United Kingdom: Butterworth~Heinemann.
+
+\item Leightón, R., $\&$ Feynman, R. (1995). Feynman volumen 2 Electromagnetismo y Materia. México, México: Pearson Educación.  
+
+\item Mohapatra, R. N. (2007). Physics of Neutrino Mass. Recuperado de \url{https://nuss.fnal.gov/html.07/lectures/RabiM_1.pdf }  (Mohapatra, 2007)
+
+\item Monopolos, never ending story – Parte III. (2014, 6 junio).  Recuperado de \url{http://naukas.com/2014/06/06/monopolos-never-ending-story-parte-iii/ } 
+\item Paugam, F. (2012). Towards the Mathematics of Quantum Field Theory. New York, United States of America: Springer.
+
+\item Peskin, M., $\&$ Schroeder, D. (1995). An Introduction to Quantum Field Theory. New York, United States of America: Perseus Books.
+\item  Pordes, R., $\&$ Snider, E. (2016, agosto). Liquid Argon Software Toolkit LArSoft. Recuperado de \url{https://indico.cern.ch/event/432527/contributions/1071433/attachments/1319976/1981094/LArSoftICHEP_V05.pdf} 
+
+\item The DUNE Collaboration. (2016, 25 enero). [Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) Conceptual Design Report Volume 2: The DUNE Detectors at LBNF]. Recuperado de \url{http://inspirehep.net/record/1410824/files/fermilab-design-2016-02.pdf } 
+
+\item The DUNE Collaboration. (2015, 23 junio). Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE) Conceptual Design Report Volume 4: The DUNE Detectors at LBNF .                     
+\newline
+ Recuperado de  \url{http://lbne2-docdb.fnal.gov/cgi-bin/RetrieveFile?docid=10690&filename=DUNE  
+
+
+-CDR-detectors-volume.pdf&version=12}
+\item Tong, D. (2015, abril). David Tong: Lectures on Electromagnetism. Recuperado de \url{ http://www.damtp.cam.ac.uk/user/tong/em.html}
+
+\item Teorema Nöther: Corrientes y Cargas conservadas. (2011, 31 octubre). Recuperado de  \url{cuentos-cuanticos.com/2011/10/31/teorema-nother-corrientes-y-cargas-conservadas/ } 
+
+
+
+\item  Una física para gobernarlas a todas. (2014, 13 agosto). Recuperado de \url{https://cuentos-cuanticos.com/2014/08/13/una-fisica-para-gobernarlas-a-todas/ } 
+
+\item University of Wisconsin–Madison. (s.f.). All About Neutrinos. Recuperado de \url{http://icecube.wisc.edu/info/neutrinos } 
+
+\item Wolchover, N. (2016, 28 julio). Neutrinos Hint of Matter-Antimatter Rift. Recuperado de  \url{www.quantamagazine.org/do-neutrinos-explain-matter-antimatter-asymmetry-20160728/ } 
+
+\end{itemize}
+
+
+
+ %----------------------------------------------------------------------------------------
+\end{document}
