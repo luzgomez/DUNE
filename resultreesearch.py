@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-df=pd.read_csv('/home/nestor/uk/21v/trees/treesearch75percent.csv',",", header=None)
+df=pd.read_csv('/home/nestor/ukresults/trees/treesearch.csv',",", header=None)
 #df=df.sort_values(by=["mean_test_score"], ascending=False)
 df=df.drop([0], axis=1)
 df.columns=df.iloc[0,:]
